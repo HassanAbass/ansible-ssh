@@ -9,3 +9,11 @@
     apt:
       name: apache2
       state: latest
+  - name: install curl package
+    apt:
+      name: curl
+      state: latest
+  - name: restart apache2 process
+    service: 
+        name: apache2 
+        state: restarted
