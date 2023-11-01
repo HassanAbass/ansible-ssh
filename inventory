@@ -1,0 +1,4 @@
+[localhosts]
+server1 ansible_host=localhost ansible_port=2221 ansible_ssh_user=root
+server2 ansible_host=localhost ansible_port=2222 ansible_ssh_user=root
+
