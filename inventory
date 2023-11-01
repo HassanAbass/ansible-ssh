@@ -1,5 +1,6 @@
-[localhosts]
+[test_servers]
 server1 ansible_host=localhost ansible_port=2220 ansible_ssh_user=root php_package=libapache2-mod-php apache_package=apache2
+[web_servers]
 server2 ansible_host=localhost ansible_port=2221 ansible_ssh_user=root php_package=libapache2-mod-php apache_package=apache2
 server3 ansible_host=localhost ansible_port=2222 ansible_ssh_user=root php_package=libapache2-mod-php apache_package=apache2
 
