@@ -38,7 +38,9 @@
         owner: root
         group: root
         mode: 0644
+    register: httpd
   - name: restart apache2 process
     service: 
         name: apache2 
         state: restarted
+    when: httpd.changed

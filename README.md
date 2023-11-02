@@ -16,6 +16,8 @@ To copy your public key to a target container for SSH authentication, follow the
    docker build -t ubuntu-ssh .
 2. run container with port open for ssh and apache
    ```bash
+   docker run -d -p 2220:22 ubuntu-ssh
+   docker run -d -p 2221:22 ubuntu-ssh
    docker run -d -p 2222:22 ubuntu-ssh
 3. Generate an SSH key pair (public and private keys) if you don't already have one:
    ```bash
